@@ -43,3 +43,6 @@ local_settings.py
 # OS files
 .DS_Store
 Thumbs.db
+
+# Local environment variables (secrets)
+.env

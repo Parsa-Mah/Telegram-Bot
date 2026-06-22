@@ -1,5 +1,6 @@
 import logging
 import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
@@ -14,8 +15,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Hello! I am your new Telegram Bot. How can I help you today?")
 
 if __name__ == '__main__':
+    # Load environment variables from .env file
+    load_dotenv()
+
     # In production, use environment variables for security. 
-    # For now, we'll look for a variable named TELEGRAM_BOT_TOKEN.
     token = os.getenv('TELEGRAM_BOT_TOKEN')
 
     if not token:
