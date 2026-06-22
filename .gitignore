@@ -1,0 +1,45 @@
+# Byte-compiled /natively compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.env/
+.venv/
+
+# Environment variables (secrets)
+.env
+.venv
+env.py
+default.py
+local_settings.py
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
